@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main(){
+    float x1,y1;
+    scanf("%f, %f", &x1, &y1);
+    #define BETWEEN(value, min, max) (value < max && value > min)
+
+    if (x1 == 0 && y1 == 0){
+        printf("Origem");
+    }
+    else if (BETWEEN(x1, 0, 10) && BETWEEN(y1, 0, 10)){
+        printf("Q1");
+    }
+    else if (BETWEEN(x1, -10, 0) && BETWEEN(y1, 0, 10)){
+        printf("Q2");
+    }
+    else if (BETWEEN(x1, -10, 0) && BETWEEN(y1, -10, 0)){
+        printf("Q3");
+    }
+    else if (BETWEEN(x1, 0, 10) && BETWEEN(y1, -10, 0)){
+        printf("Q4");
+    }
+    else if (BETWEEN(x1, -10, 10) && BETWEEN(y1, 0, 0)){
+        printf("Eixo X");
+    }
+    else if (BETWEEN(x1, 0, 0) && BETWEEN(y1, -10, 10)){
+        printf("Eixo Y");
+    }
+
+    return 0;
+}
