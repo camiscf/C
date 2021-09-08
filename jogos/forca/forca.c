@@ -197,3 +197,6 @@ int main(){
     printf("   \\_             _/       \n");
     printf("     \\_         _/         \n");
     printf("       \\_______/           \n");
+    }
+    adicionapalavra();
+}
